@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood on the Clocktower Online</title>
+<link rel="stylesheet" href="style.css">
+<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+<!-- Lobby -->
+<div id="lobby">
+  <h1>Blood on the Clocktower</h1>
+  <input type="text" id="playerName" placeholder="Your Name">
+  <button id="joinBtn">Join Game</button>
+  <div id="playersList"></div>
+</div>
+
+<!-- Game Screen -->
+<div id="gameScreen" style="display:none;">
+  <div id="roleInfo" class="gothic-card"></div>
+  <div id="nightActions" class="gothic-card"></div>
+  <div id="playerCards" class="gothic-card"></div>
+
+  <div id="notesPanel" class="gothic-card">
+    <h3>Notes</h3>
+    <textarea id="playerNotes" placeholder="Click a player to take notes"></textarea>
+  </div>
+
+  <div id="hostControls" style="display:none;" class="gothic-card">
+    <button id="startNight">Start Night</button>
+    <button id="endNight">End Night</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
